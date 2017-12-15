@@ -14,7 +14,7 @@ for m=1%:numel(dtiff_intensiy)
     image_array=zeros(height_image,width_image,length_image,'double');  % Convert to 16-bit unsigned integer
     
     %for j=1
-        for i=1:length_imageo0
+        for i=1:length_image
         image_array(:,:,i)=imread(tiff_file_1,'Index',i,'info',image_info); % 3D matrix containing gray values of the tif file
         imshow(image_array(:,:,i),[]);  % Show the image
         end
